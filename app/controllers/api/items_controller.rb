@@ -3,7 +3,6 @@ class Api::ItemsController < ApiController
  
   def create
   	item = Item.new(item_params)
-  	
   	if item.save
   		render json: item
   	else
